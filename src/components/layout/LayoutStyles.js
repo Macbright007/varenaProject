@@ -3,8 +3,8 @@ import styled from "styled-components";
 // styling for main
 export const MainContainer = styled.div`
   // border: 2px solid blue;
-  background: #0D0D0D; 
-`
+  background: #0D0D0D;
+`;
 
 // styling for navbar
 export const NavWrapper = styled.div`
@@ -66,9 +66,13 @@ export const NavItems = styled.div`
     text-decoration: none;
   }
 
-  a:nth-child(1) {
-    color: #e67f1a;
-  }
+  // a:nth-child(1) {
+  //   color: #e67f1a;
+  // }
+
+  // a.active{
+  //   color: #e67f1a;
+  // }
 `;
 
 // styling for banner
@@ -95,9 +99,62 @@ export const BannerWrapper = styled.div`
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
-    color:  #e67f1a;
+    color: #e67f1a;
     letter-spacing: 5px;
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
     // line-height: 24px;
+  }
+`;
+
+export const FooterWrapper = styled.footer`
+  // border: 2px solid blue;
+  padding: 5px;
+  background: #222222;
+`;
+export const FooterContainer = styled.footer`
+  // border: 2px solid blue;
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 10px;
+  display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+  .th__grid {
+    // border: 2px solid red;
+  }
+  .th__grid p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.001em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .th__grid h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.001em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .th__grid ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    // margin-top: 2px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.001em;
+    color: rgba(255, 255, 255, 0.8);
   }
 `;

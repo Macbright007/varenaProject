@@ -1,6 +1,8 @@
 import React from "react";
 import { AboutContent, AboutWrapper } from "./PagesStyles";
 import teamm from "../../images/teamm.svg";
+import Mission from "../subComponents/Mission";
+import Leadership from "../subComponents/Leadership";
 
 const About = () => {
   return (
@@ -34,6 +36,9 @@ const About = () => {
           <img src={teamm} alt="team" />
         </div>
       </AboutContent>
+
+      <Mission />
+      <Leadership />
     </AboutWrapper>
   );
 };

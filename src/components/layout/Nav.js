@@ -1,9 +1,19 @@
 import React from "react";
 import { NavContainer, NavItems, NavWrapper } from "./LayoutStyles";
 import logo from "../../images/logo.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
+
+  // style function for active link
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? 'bold' : 'normal',
+      color: isActive ? '#e67f1a' : 'white',
+      textTransform: isActive ? 'uppercase' : 'none',
+    }
+  }
+
   return (
     <NavWrapper>
       <NavContainer>
@@ -11,21 +21,21 @@ const Nav = () => {
 
         <div className="nav__right">
           <NavItems>
-            <Link to="/home">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/gallery">Gallery</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/membership">Membership</Link>
+            <NavLink to="/home" style={navLinkStyles}>Home</NavLink>
+            <NavLink to="/about" style={navLinkStyles}>About</NavLink>
+            <NavLink to="/gallery" style={navLinkStyles}>Gallery</NavLink>
+            <NavLink to="/blog" style={navLinkStyles}>Blog</NavLink>
+            <NavLink to="/contact" style={navLinkStyles}>Contact</NavLink>
+            <NavLink to="/membership" style={navLinkStyles}>Membership</NavLink>
           </NavItems>
 
           <div className="btn__btn">
-            <Link to="">
+            <NavLink to="">
               <button>Sign in</button>
-            </Link>
-            <Link to="">
+            </NavLink>
+            <NavLink to="">
               <button>Sign up</button>
-            </Link>
+            </NavLink>
           </div>
         </div>
       </NavContainer>
