@@ -582,7 +582,7 @@ export const MemberCardContainer = styled.div`
     object-fit: cover;
   }
 
-  .member__card__content{
+  .member__card__content {
     padding: 7px;
   }
   .member__card__content h3 {
@@ -616,5 +616,24 @@ export const MemberCardContainer = styled.div`
     letter-spacing: 0.001em;
     color: #fff;
     width: 238px;
+  }
+`;
+
+export const GalleryContainer = styled.div`
+  background-color: white;
+  background: #1c1c1c;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+
+  h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 64px;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
   }
 `;

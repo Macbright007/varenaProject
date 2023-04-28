@@ -4,6 +4,7 @@ import Genre from "../subComponents/Genre";
 import Music from "../subComponents/Music";
 // import Main from '../layout/Main'
 import Trending from "../subComponents/Trending";
+import Gallery from "./Gallery";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Trending />
       <Genre />
       <Music />
+      <Gallery />
     </div>
   );
 };
